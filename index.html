@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="md:container mx-auto">
+        <div class="flex justify-center my-8 gap-2">
+            <h2 class="text-4xl font-bold text-sky-500">Money Master</h2>
+            <img class="h-8" src="image/money-bag.png" alt="">
+        </div>
+    </header>
+    <main class="md:container mx-auto p-6">
+        <section class="md:flex gap-x-14">
+            <div class="w-full mb-4">
+                <img src="image/Pexels Photo by Karolina Grabowska.png" alt="">
+            </div>
+            <div class="bg-slate-100 p-6 w-full text-center">
+                <div>
+                    <h3 class="font-semibold text-xl mb-5">Income</h3>
+                    <div>
+                        <span class="font-medium text-xl mr-2">Income:</span>
+                        <input class="bg-slate-300 py-2 px-2 mb-4" type="text" name="" id="income-input">
+                    </div>
+                    <h3 class="font-semibold text-xl mb-5">Expenses</h3>
+                    <div>
+                        <span class="font-medium text-xl ml-5 mr-2">Food:</span>
+                        <input  class="bg-slate-300 py-2 px-2 mb-4" type="text" name="" id="food-input">
+                    </div>
+                    <div>
+                        <span class="font-medium text-xl ml-6 mr-2">Rent:</span>
+                        <input class="bg-slate-300 py-2 px-2 mb-4" type="text" name="" id="rent-input">
+                    </div>
+                    <div>
+                        <span class="font-medium text-xl mr-2">Clothes:</span>
+                        <input class="bg-slate-300 py-2 px-2 mb-4" type="text" name="" id="clothes-input">
+                    </div>
+                    <button id="total-sum" class="px-14 py-3 bg-cyan-500 rounded-md text-white font-medium text-lg mb-4">Calculate</button>
+                    <h3 class="font-semibold text-xl mb-4">Total Expenses: <span id="total-expenses"></span></h3>
+                    <h3 class="font-semibold text-xl mb-4">Balance: <span id="balance"></span></h3>
+                    <div>
+                        <span class="font-medium text-xl mr-2">Save:</span>
+                        <input class="bg-slate-300 py-2 px-2 mb-4" type="text" name="" id="save-input">
+                        <span class="font-medium text-xl mr-2 ml-2">%</span>
+                        <button id="save-btn" class="px-7 py-3 bg-cyan-500 rounded-md text-white font-medium text-lg ">Save</button>
+                    </div>
+                    <h3 class="font-semibold text-xl mb-4">Saving Amount: <span id="save-value"></span></h3>
+                    <h3 class="font-semibold text-xl mb-4">Remaining Balance: <span id="remaining-balance"></span></h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<script src="js/money.js"></script>
+</body>
+</html>
